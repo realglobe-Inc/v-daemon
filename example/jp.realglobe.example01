@@ -6,11 +6,11 @@
 'use strict'
 
 // verb and object passed as process args
-const [, , verb, object = '[]'] = process.argv
+const [, , verb, object1, object2] = process.argv
 
 switch (verb) {
   case 'sayHi': {
-    process.stdout.write(`Hi, ${object}`)
+    process.stdout.write(`Hi, ${object1} and ${object2}`)
     break
   }
   default:

@@ -34,8 +34,8 @@ describe('v-daemon', () => {
 
     const example01 = await client.use('jp.realglobe.example01')
     equal(
-      await example01.sayHi('From Test'),
-      'Hi, From Test'
+      await example01.sayHi('From Test', 'yes'),
+      'Hi, From Test and yes'
     )
 
     await asleep(100)

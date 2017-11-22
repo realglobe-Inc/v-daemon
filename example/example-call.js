@@ -15,5 +15,5 @@ const vSpot = require('v-spot')
   // By default, subject name is generated from script name
   const example01 = await spot.use('jp.realglobe.example01')
   // Send the signal to daemon script via server
-  await example01.sayHi('can you hear me?')
+  await example01.sayHi('can you hear me?', 'really?')
 })()
