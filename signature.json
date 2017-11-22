@@ -1,0 +1,41 @@
+{
+  "name": "v-daemon",
+  "main": true,
+  "args": [
+    {
+      "name": "filename",
+      "multiple": true,
+      "desc": "File name (or glob pattern) of scripts to daemonize"
+    }
+  ],
+  "options": [
+    {
+      "name": "hostname",
+      "short": "H",
+      "type": "string",
+      "optional": true,
+      "desc": "List available tasks"
+    },
+    {
+      "name": "port",
+      "short": "p",
+      "type": "string",
+      "optional": true,
+      "desc": "Port number"
+    },
+    {
+      "name": "connector",
+      "short": "c",
+      "optional": true,
+      "type": "string",
+      "desc": "connection type"
+    },
+    {
+      "name": "id",
+      "short": "i",
+      "optional": true,
+      "type": "string",
+      "desc": "Subject ID"
+    }
+  ]
+}

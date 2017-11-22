@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+/**
+ * @file Example script to daemonize
+ */
+'use strict'
+
+// verb and object passed as process args
+const [, , verb, object = '[]'] = process.argv
+
+switch (verb) {
+  case 'sayHi': {
+    process.stdout.write(`Hi, ${object}`)
+    break
+  }
+  default:
+    throw new Error(`Unknown verb: ${verb}`)
+}

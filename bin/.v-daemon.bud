@@ -1,0 +1,16 @@
+/**
+ * Bud file for bin.
+ */
+
+'use strict'
+
+const apeTmpl = require('ape-tmpl')
+
+module.exports = apeTmpl.binBud({
+  signature: require('../signature'),
+  path: 'v-daemon'
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}

@@ -1,0 +1,104 @@
+{
+    "functions": [
+        {
+            "name": "clientFor",
+            "access": "",
+            "virtual": false,
+            "description": "",
+            "parameters": [],
+            "examples": []
+        },
+        {
+            "name": "subjectFor",
+            "access": "",
+            "virtual": false,
+            "description": "Define subject for",
+            "parameters": [
+                {
+                    "name": "filename",
+                    "type": "string",
+                    "description": "",
+                    "default": "",
+                    "optional": "",
+                    "nullable": ""
+                }
+            ],
+            "examples": []
+        },
+        {
+            "name": "vDaemon",
+            "access": "",
+            "virtual": false,
+            "description": "",
+            "parameters": [
+                {
+                    "name": null,
+                    "type": "string",
+                    "description": "",
+                    "default": "",
+                    "optional": "",
+                    "nullable": ""
+                },
+                {
+                    "name": null,
+                    "type": "Object",
+                    "description": "Optional settings",
+                    "default": "",
+                    "optional": "",
+                    "nullable": ""
+                }
+            ],
+            "examples": []
+        },
+        {
+            "name": "clientFor",
+            "access": "",
+            "virtual": false,
+            "description": "",
+            "parameters": [],
+            "examples": []
+        },
+        {
+            "name": "subjectFor",
+            "access": "",
+            "virtual": false,
+            "description": "Define subject for",
+            "parameters": [
+                {
+                    "name": "filename",
+                    "type": "string",
+                    "description": "",
+                    "default": "",
+                    "optional": "",
+                    "nullable": ""
+                }
+            ],
+            "examples": []
+        },
+        {
+            "name": "vDaemon",
+            "access": "",
+            "virtual": false,
+            "description": "",
+            "parameters": [
+                {
+                    "name": null,
+                    "type": "string",
+                    "description": "",
+                    "default": "",
+                    "optional": "",
+                    "nullable": ""
+                },
+                {
+                    "name": null,
+                    "type": "Object",
+                    "description": "Optional settings",
+                    "default": "",
+                    "optional": "",
+                    "nullable": ""
+                }
+            ],
+            "examples": []
+        }
+    ]
+}

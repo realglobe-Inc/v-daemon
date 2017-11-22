@@ -1,0 +1,55 @@
+{
+  "name": "v-daemon",
+  "version": "1.0.0",
+  "description": "Daemon script for v-spot-client",
+  "bin": {
+    "v-daemon": "bin/v-daemon"
+  },
+  "main": "lib",
+  "browser": "shim",
+  "scripts": {
+    "build": "the-script-build",
+    "doc": "the-script-jsdoc",
+    "prepare": "the-script-build && the-script-jsdoc",
+    "release": "the-script-release -y",
+    "share": "the-script-share",
+    "test": "mocha",
+    "update": "the-script-update",
+    "watch": "the-script-build -w"
+  },
+  "repository": "realglobe-INc/v-daemon",
+  "keywords": [
+    "the"
+  ],
+  "author": {
+    "name": "okunishinishi",
+    "email": "okunishinishi@gmail.com",
+    "url": "undefined"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/realglobe-INc/v-daemon/issues"
+  },
+  "homepage": "https://github.com/realglobe-INc/v-daemon#readme",
+  "dependencies": {
+    "aglob": "^3.0.0",
+    "argx": "^3.0.2",
+    "commander": "^2.11.0",
+    "v-spot": "^1.1.0",
+    "v-spot-ws": "^1.0.3"
+  },
+  "devDependencies": {
+    "aport": "^2.0.0",
+    "mocha": "^4.0.1",
+    "the-script-build": "^2.0.0",
+    "the-script-jsdoc": "^2.0.0",
+    "the-script-release": "^1.0.6",
+    "the-script-share": "^1.0.5",
+    "the-script-update": "^1.0.0",
+    "the-templates": "^2.0.1"
+  },
+  "engines": {
+    "node": ">=8",
+    "npm": ">=4"
+  }
+}

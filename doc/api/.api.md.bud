@@ -1,0 +1,20 @@
+'use strict'
+
+const {api} = require('the-templates')
+const {signature} = require('the-script-jsdoc')
+const jsdoc = require('../../jsdoc.json')
+
+module.exports = api({
+  pkg: require('../../package.json'),
+  signature: signature(
+    jsdoc,
+    {
+      classNames: (jsdoc.classes || []).map(({name}) => name),
+      functionNames: (jsdoc.functions || []).map(({name}) => name),
+    }
+  )
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}
