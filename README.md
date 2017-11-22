@@ -84,11 +84,11 @@ Step01: Create script file to run. File basename will be the subject id
 'use strict'
 
 // verb and object passed as process args
-const [, , verb, object = '[]'] = process.argv
+const [, , verb, object1, object2] = process.argv
 
 switch (verb) {
   case 'sayHi': {
-    process.stdout.write(`Hi, ${object}`)
+    process.stdout.write(`Hi, ${object1} and ${object2}`)
     break
   }
   default:
@@ -126,7 +126,7 @@ const vSpot = require('v-spot')
   // By default, subject name is generated from script name
   const example01 = await spot.use('jp.realglobe.example01')
   // Send the signal to daemon script via server
-  await example01.sayHi('can you hear me?')
+  await example01.sayHi('can you hear me?', 'really?')
 })()
 
 ```
