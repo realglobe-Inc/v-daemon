@@ -35,8 +35,8 @@
     "aglob": "^3.0.0",
     "argx": "^3.0.2",
     "commander": "^2.11.0",
-    "v-spot": "^1.1.1",
-    "v-spot-ws": "^1.0.4"
+    "v-spot": "^1.1.2",
+    "v-spot-ws": "^1.0.6"
   },
   "devDependencies": {
     "aport": "^2.0.0",

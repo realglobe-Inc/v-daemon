@@ -27,14 +27,14 @@ describe('v-daemon', () => {
     await asleep(100)
 
     const close = await vDaemon(
-      require.resolve('../example/jp.realglobe.example01'),
+      require.resolve('../example/jp.realglobe.example02'),
       {port}
     )
     await client.connect(`http://localhost:${port}`)
 
-    const example01 = await client.use('jp.realglobe.example01')
+    const example02 = await client.use('jp.realglobe.example02')
     equal(
-      await example01.sayHi('From Test', 'yes'),
+      (await example02.sayHi('From Test', 'yes')).trim(),
       'Hi, From Test and yes'
     )
 
