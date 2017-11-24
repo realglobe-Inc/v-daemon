@@ -5,7 +5,7 @@ Daemon script for v-spot-client
 + Functions
   + [clientFor()](#v-daemon-function-client-for)
   + [subjectFor(filename)](#v-daemon-function-subject-for)
-  + [vDaemon(, )](#v-daemon-function-v-daemon)
+  + [vDaemon(filename, )](#v-daemon-function-v-daemon)
 
 ## Functions
 
@@ -26,13 +26,13 @@ Define subject for
 
 <a class='md-heading-link' name="v-daemon-function-v-daemon" ></a>
 
-### vDaemon(, )
+### vDaemon(filename, )
 
 
 
 | Param | Type | Description |
 | ----- | --- | -------- |
-|  | string |  |
+| filename | string |  |
 |  | Object | Optional settings |
 
 

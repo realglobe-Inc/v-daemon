@@ -32,7 +32,7 @@
             "description": "",
             "parameters": [
                 {
-                    "name": null,
+                    "name": "filename",
                     "type": "string",
                     "description": "",
                     "default": "",
@@ -82,7 +82,7 @@
             "description": "",
             "parameters": [
                 {
-                    "name": null,
+                    "name": "filename",
                     "type": "string",
                     "description": "",
                     "default": "",

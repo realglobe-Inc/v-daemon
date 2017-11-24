@@ -131,6 +131,27 @@ const vSpot = require('v-spot')
 
 ```
 
+
+### CLI Help
+
+```bash
+
+  Usage: v-daemon [options] <filename ...> 
+
+  Daemon script for v-spot-client
+
+
+  Options:
+
+    -V, --version                output the version number
+    -H, --hostname [hostname]    List available tasks
+    -p, --port [port]            Port number
+    -c, --connector [connector]  connection type
+    -i, --id [id]                Subject ID
+    -h, --help                   output usage information
+
+```
+
 <!-- Section from "doc/guides/02.Usage.md.hbs" End -->
 
 <!-- Section from "doc/guides/10.API Guide.md.hbs" Start -->
