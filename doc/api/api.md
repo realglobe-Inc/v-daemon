@@ -1,11 +1,11 @@
-# v-daemon@1.1.0
+# v-daemon@1.1.1
 
 Daemon script for v-spot-client
 
 + Functions
   + [clientFor()](#v-daemon-function-client-for)
   + [subjectFor(filename)](#v-daemon-function-subject-for)
-  + [vDaemon(filename, )](#v-daemon-function-v-daemon)
+  + [vDaemon(filename, object)](#v-daemon-function-v-daemon)
 
 ## Functions
 
@@ -26,14 +26,14 @@ Define subject for
 
 <a class='md-heading-link' name="v-daemon-function-v-daemon" ></a>
 
-### vDaemon(filename, )
+### vDaemon(filename, object) -> `Promise`
 
 
 
 | Param | Type | Description |
 | ----- | --- | -------- |
-| filename | string |  |
-|  | Object | Optional settings |
+| filename | string | Script file path to daemonize |
+| object | Object | Optional settings |
 
 
 
