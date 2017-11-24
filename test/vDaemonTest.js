@@ -10,8 +10,11 @@ const asleep = require('asleep')
 const aport = require('aport')
 const {ok, equal} = require('assert')
 
+const vCallBin = require.resolve('v-call/bin/v-call')
+const {exec} = require('child_process')
+
 describe('v-daemon', function () {
-  this.timeout(8000)
+  this.timeout(80000)
   before(() => {
   })
 
@@ -29,7 +32,7 @@ describe('v-daemon', function () {
 
     const close = await vDaemon(
       require.resolve('../example/jp.realglobe.example02'),
-      {port, q:true}
+      {port, q: true}
     )
     await client.connect(`http://localhost:${port}`)
 
@@ -59,7 +62,7 @@ describe('v-daemon', function () {
 
     const close = await vDaemon(
       require.resolve('../example/jp.realglobe.example01'),
-      {protocol: 'https', hostname: 'v.realglobe.work'}
+      {protocol: 'https', hostname: 'v.realglobe.work', quiet: true}
     )
     await client.connect(`https://v.realglobe.work`)
 
@@ -68,6 +71,18 @@ describe('v-daemon', function () {
       (await example01.sayHi('From Test', 'yes')).trim(),
       'Hi, From Test and yes'
     )
+
+    await new Promise((resolve) =>
+      exec(
+        `${vCallBin} jp.realglobe.example01 sayHi foo bar -P https -H v.realglobe.work`,
+        (err, stdout, stderr) => {
+          equal(stdout.trim(), 'Hi, foo and bar')
+          resolve()
+        }
+      )
+    )
+
+    await asleep(1100)
 
     await client.disconnect()
     await close()
