@@ -43,6 +43,13 @@
       "optional": true,
       "type": "string",
       "desc": "Subject ID"
+    },
+    {
+      "name": "quiet",
+      "short": "q",
+      "optional": true,
+      "type": "boolean",
+      "desc": "No messages"
     }
   ]
 }

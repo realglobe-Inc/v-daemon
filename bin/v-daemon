@@ -20,6 +20,7 @@ program
   .option('-P, --protocol [protocol]', 'Protocol')
   .option('-c, --connector [connector]', 'connection type')
   .option('-i, --id [id]', 'Subject ID')
+  .option('-q, --quiet [quiet]', 'No messages')
 program.parse(process.argv)
 
 // Run main command
@@ -28,7 +29,8 @@ vDaemon.apply(vDaemon, program.args.concat({
   port: program.port,
   protocol: program.protocol,
   connector: program.connector,
-  id: program.id})
+  id: program.id,
+  quiet: program.quiet})
 ).catch(handleError)
 
 // Handlers

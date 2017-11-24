@@ -5,7 +5,7 @@
 'use strict'
 
 const vDaemon = require('../lib/vDaemon')
-const vSpotWS = require('v-spot-ws/lib/create')
+const vSpotWS = require('v-spot-ws')
 const asleep = require('asleep')
 const aport = require('aport')
 const {ok, equal} = require('assert')
@@ -29,15 +29,23 @@ describe('v-daemon', function () {
 
     const close = await vDaemon(
       require.resolve('../example/jp.realglobe.example02'),
-      {port}
+      {port, q:true}
     )
     await client.connect(`http://localhost:${port}`)
 
-    const example02 = await client.use('jp.realglobe.example02')
-    equal(
-      (await example02.sayHi('From Test', 'yes')).trim(),
-      'Hi, From Test and yes'
-    )
+    {
+      const example02 = await client.use('jp.realglobe.example02')
+      equal(
+        (await example02.sayHi('From Test', 'yes')).trim(),
+        'Hi, From Test and yes'
+      )
+    }
+
+    {
+      const example02 = await client.use('jp.realglobe.example02')
+      const error = await example02.invalidMethodCall().catch((e) => e)
+      console.error(error)
+    }
 
     await asleep(100)
 

@@ -149,6 +149,7 @@ const vSpot = require('v-spot')
     -P, --protocol [protocol]    Protocol
     -c, --connector [connector]  connection type
     -i, --id [id]                Subject ID
+    -q, --quiet [quiet]          No messages
     -h, --help                   output usage information
 
 ```
@@ -162,7 +163,7 @@ const vSpot = require('v-spot')
 API Guide
 -----
 
-+ [v-daemon@1.1.1](./doc/api/api.md)
++ [v-daemon@1.1.2](./doc/api/api.md)
 
 
 <!-- Section from "doc/guides/10.API Guide.md.hbs" End -->
