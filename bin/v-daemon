@@ -17,6 +17,7 @@ program
   .description(pkg[ 'description' ])
   .option('-H, --hostname [hostname]', 'List available tasks')
   .option('-p, --port [port]', 'Port number')
+  .option('-P, --protocol [protocol]', 'Protocol')
   .option('-c, --connector [connector]', 'connection type')
   .option('-i, --id [id]', 'Subject ID')
 program.parse(process.argv)
@@ -25,6 +26,7 @@ program.parse(process.argv)
 vDaemon.apply(vDaemon, program.args.concat({
   hostname: program.hostname,
   port: program.port,
+  protocol: program.protocol,
   connector: program.connector,
   id: program.id})
 ).catch(handleError)
