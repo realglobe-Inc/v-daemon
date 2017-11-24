@@ -24,6 +24,13 @@
       "desc": "Port number"
     },
     {
+      "name": "protocol",
+      "short": "P",
+      "type": "string",
+      "optional": true,
+      "desc": "Protocol"
+    },
+    {
       "name": "connector",
       "short": "c",
       "optional": true,

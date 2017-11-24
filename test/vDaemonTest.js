@@ -10,7 +10,8 @@ const asleep = require('asleep')
 const aport = require('aport')
 const {ok, equal} = require('assert')
 
-describe('v-daemon', () => {
+describe('v-daemon', function () {
+  this.timeout(8000)
   before(() => {
   })
 
@@ -43,6 +44,25 @@ describe('v-daemon', () => {
     await client.disconnect()
     await close()
     await server.close()
+  })
+
+  it('Use v.realglobe.work', async () => {
+    const client = vSpotWS.client()
+
+    const close = await vDaemon(
+      require.resolve('../example/jp.realglobe.example01'),
+      {protocol: 'https', hostname: 'v.realglobe.work'}
+    )
+    await client.connect(`https://v.realglobe.work`)
+
+    const example01 = await client.use('jp.realglobe.example01')
+    equal(
+      (await example01.sayHi('From Test', 'yes')).trim(),
+      'Hi, From Test and yes'
+    )
+
+    await client.disconnect()
+    await close()
   })
 })
 
