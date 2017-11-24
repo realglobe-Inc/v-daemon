@@ -146,6 +146,7 @@ const vSpot = require('v-spot')
     -V, --version                output the version number
     -H, --hostname [hostname]    List available tasks
     -p, --port [port]            Port number
+    -P, --protocol [protocol]    Protocol
     -c, --connector [connector]  connection type
     -i, --id [id]                Subject ID
     -h, --help                   output usage information
@@ -161,7 +162,7 @@ const vSpot = require('v-spot')
 API Guide
 -----
 
-+ [v-daemon@1.0.3](./doc/api/api.md)
++ [v-daemon@1.1.0](./doc/api/api.md)
 
 
 <!-- Section from "doc/guides/10.API Guide.md.hbs" End -->

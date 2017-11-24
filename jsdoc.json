@@ -34,13 +34,13 @@
                 {
                     "name": "filename",
                     "type": "string",
-                    "description": "",
+                    "description": "Script file path to daemonize",
                     "default": "",
                     "optional": "",
                     "nullable": ""
                 },
                 {
-                    "name": null,
+                    "name": "object",
                     "type": "Object",
                     "description": "Optional settings",
                     "default": "",
@@ -48,7 +48,11 @@
                     "nullable": ""
                 }
             ],
-            "examples": []
+            "examples": [],
+            "returns": {
+                "type": "Promise",
+                "description": ""
+            }
         },
         {
             "name": "clientFor",
@@ -84,13 +88,13 @@
                 {
                     "name": "filename",
                     "type": "string",
-                    "description": "",
+                    "description": "Script file path to daemonize",
                     "default": "",
                     "optional": "",
                     "nullable": ""
                 },
                 {
-                    "name": null,
+                    "name": "object",
                     "type": "Object",
                     "description": "Optional settings",
                     "default": "",
@@ -98,7 +102,11 @@
                     "nullable": ""
                 }
             ],
-            "examples": []
+            "examples": [],
+            "returns": {
+                "type": "Promise",
+                "description": ""
+            }
         }
     ]
 }
