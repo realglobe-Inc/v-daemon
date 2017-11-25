@@ -73,7 +73,7 @@ Usage
 
 Step01: Create script file to run. File basename will be the subject id
 
-**/home/scripts/v/jp.realglobe.example01**
+**/home/scripts/v/jp.realglobe.v-daemon.example01**
 
 ```javascript
 #!/usr/bin/env node
@@ -104,7 +104,7 @@ Step02: Daemonize the script
 
 # Give script path to daemonize
 
-v-daemon /home/scripts/v/jp.realglobe.example01 -H "v-spot.cloud.com"
+v-daemon /home/scripts/v/jp.realglobe.v-daemon.example01 -H "v-spot.cloud.com"
 ```
 
 Step03: Call it from another client
@@ -124,7 +124,7 @@ const vSpot = require('v-spot')
   await spot.connect('v-spot.cloud.com')
 
   // By default, subject name is generated from script name
-  const example01 = await spot.use('jp.realglobe.example01')
+  const example01 = await spot.use('jp.realglobe.v-daemon.example01')
   // Send the signal to daemon script via server
   await example01.sayHi('can you hear me?', 'really?')
 })()
