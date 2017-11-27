@@ -163,7 +163,7 @@ const vSpot = require('v-spot')
 API Guide
 -----
 
-+ [v-daemon@1.1.5](./doc/api/api.md)
++ [v-daemon@1.1.6](./doc/api/api.md)
 
 
 <!-- Section from "doc/guides/10.API Guide.md.hbs" End -->
