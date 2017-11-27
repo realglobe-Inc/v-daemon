@@ -32,7 +32,7 @@ describe('v-daemon', function () {
 
     const close = await vDaemon(
       require.resolve('../example/jp.realglobe.v-daemon.example02'),
-      {port, q: true}
+      {port, verbose: true}
     )
     await client.connect(`http://localhost:${port}`)
 

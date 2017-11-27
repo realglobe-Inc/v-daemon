@@ -21,6 +21,7 @@ program
   .option('-c, --connector [connector]', 'connection type')
   .option('-i, --id [id]', 'Subject ID')
   .option('-q, --quiet [quiet]', 'No messages')
+  .option('-v, --verbose [verbose]', 'Show verbose log')
 program.parse(process.argv)
 
 // Run main command
@@ -30,7 +31,8 @@ vDaemon.apply(vDaemon, program.args.concat({
   protocol: program.protocol,
   connector: program.connector,
   id: program.id,
-  quiet: program.quiet})
+  quiet: program.quiet,
+  verbose: program.verbose})
 ).catch(handleError)
 
 // Handlers

@@ -50,6 +50,13 @@
       "optional": true,
       "type": "boolean",
       "desc": "No messages"
+    },
+    {
+      "name": "verbose",
+      "short": "v",
+      "optional": true,
+      "type": "boolean",
+      "desc": "Show verbose log"
     }
   ]
 }
