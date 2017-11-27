@@ -39,7 +39,7 @@ describe('v-daemon', function () {
     {
       const example02 = await client.use('jp.realglobe.v-daemon.example02')
       equal(
-        (await example02.sayHi('From Test', 'yes')).trim(),
+        (await example02.sayHi('From Test', 'yes')),
         'Hi, From Test and yes'
       )
     }
@@ -75,7 +75,7 @@ describe('v-daemon', function () {
     {
       const example01 = await client.use('jp.realglobe.v-daemon.example01')
       equal(
-        (await example01.sayHi('From Test', 'yes')).trim(),
+        (await example01.sayHi('From Test', 'yes')),
         'Hi, From Test and yes'
       )
     }
@@ -83,7 +83,7 @@ describe('v-daemon', function () {
     {
       const example03 = await client.use('jp.realglobe.v-daemon.example03')
       equal(
-        String(await example03.uname()).trim(),
+        String(await example03.uname()),
         String(execSync('uname')).trim()
       )
 
@@ -103,7 +103,7 @@ describe('v-daemon', function () {
       exec(
         `${vCallBin} jp.realglobe.v-daemon.example01 sayHi foo bar -P https -H v.realglobe.work`,
         (err, stdout, stderr) => {
-          equal(stdout.trim(), 'Hi, foo and bar')
+          equal(String(stdout).trim(), 'Hi, foo and bar')
           resolve()
         }
       )
