@@ -36,7 +36,7 @@
     "argx": "^3.0.2",
     "commander": "^2.12.1",
     "debug": "^3.1.0",
-    "shiba-daemon-util": "^1.0.0",
+    "shiba-daemon-util": "^1.0.1",
     "v-connector": "^1.0.0"
   },
   "devDependencies": {
@@ -44,14 +44,14 @@
     "asleep": "^1.0.3",
     "mocha": "^4.0.1",
     "the-script-build": "^2.0.0",
-    "the-script-jsdoc": "^2.0.0",
+    "the-script-jsdoc": "^2.0.1",
     "the-script-release": "^1.0.6",
     "the-script-share": "^1.0.5",
     "the-script-update": "^1.0.0",
     "the-templates": "^2.0.1",
-    "v-call": "^1.1.1",
+    "v-call": "^1.2.6",
     "v-spot": "^1.2.0",
-    "v-spot-ws": "^1.0.12"
+    "v-spot-ws": "^1.0.13"
   },
   "engines": {
     "node": ">=8",
