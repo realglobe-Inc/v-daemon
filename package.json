@@ -1,6 +1,6 @@
 {
   "name": "v-daemon",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Daemon script for v-spot-client",
   "bin": {
     "v-daemon": "bin/v-daemon"
