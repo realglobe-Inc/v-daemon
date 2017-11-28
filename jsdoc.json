@@ -1,23 +1,6 @@
 {
     "functions": [
         {
-            "name": "subjectFor",
-            "access": "",
-            "virtual": false,
-            "description": "Define subject for",
-            "parameters": [
-                {
-                    "name": "filename",
-                    "type": "string",
-                    "description": "",
-                    "default": "",
-                    "optional": "",
-                    "nullable": ""
-                }
-            ],
-            "examples": []
-        },
-        {
             "name": "vDaemon",
             "access": "",
             "virtual": false,
@@ -45,23 +28,6 @@
                 "type": "Promise",
                 "description": ""
             }
-        },
-        {
-            "name": "subjectFor",
-            "access": "",
-            "virtual": false,
-            "description": "Define subject for",
-            "parameters": [
-                {
-                    "name": "filename",
-                    "type": "string",
-                    "description": "",
-                    "default": "",
-                    "optional": "",
-                    "nullable": ""
-                }
-            ],
-            "examples": []
         },
         {
             "name": "vDaemon",

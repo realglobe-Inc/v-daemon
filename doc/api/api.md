@@ -1,4 +1,4 @@
-# v-daemon@1.2.2
+# v-daemon@1.2.3
 
 Daemon script for v-spot-client
 
@@ -22,7 +22,7 @@ Define subject for
 
 ### vDaemon(filename, object) -> `Promise`
 
-
+Daemonize v script
 
 | Param | Type | Description |
 | ----- | --- | -------- |
