@@ -1,14 +1,6 @@
 {
     "functions": [
         {
-            "name": "clientFor",
-            "access": "",
-            "virtual": false,
-            "description": "",
-            "parameters": [],
-            "examples": []
-        },
-        {
             "name": "subjectFor",
             "access": "",
             "virtual": false,
@@ -53,14 +45,6 @@
                 "type": "Promise",
                 "description": ""
             }
-        },
-        {
-            "name": "clientFor",
-            "access": "",
-            "virtual": false,
-            "description": "",
-            "parameters": [],
-            "examples": []
         },
         {
             "name": "subjectFor",

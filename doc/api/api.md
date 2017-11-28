@@ -1,4 +1,4 @@
-# v-daemon@1.2.0
+# v-daemon@1.2.1
 
 Daemon script for v-spot-client
 
