@@ -21,7 +21,7 @@
             "name": "vDaemon",
             "access": "",
             "virtual": false,
-            "description": "",
+            "description": "Daemonize v script",
             "parameters": [
                 {
                     "name": "filename",
@@ -67,7 +67,7 @@
             "name": "vDaemon",
             "access": "",
             "virtual": false,
-            "description": "",
+            "description": "Daemonize v script",
             "parameters": [
                 {
                     "name": "filename",

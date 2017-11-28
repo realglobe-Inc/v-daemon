@@ -1,18 +1,12 @@
-# v-daemon@1.2.1
+# v-daemon@1.2.2
 
 Daemon script for v-spot-client
 
 + Functions
-  + [clientFor()](#v-daemon-function-client-for)
   + [subjectFor(filename)](#v-daemon-function-subject-for)
   + [vDaemon(filename, object)](#v-daemon-function-v-daemon)
 
 ## Functions
-
-<a class='md-heading-link' name="v-daemon-function-client-for" ></a>
-
-### clientFor()
-
 
 <a class='md-heading-link' name="v-daemon-function-subject-for" ></a>
 
