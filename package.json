@@ -34,10 +34,11 @@
   "dependencies": {
     "aglob": "^3.0.0",
     "argx": "^3.0.2",
-    "commander": "^2.12.1",
+    "commander": "^2.12.2",
     "debug": "^3.1.0",
-    "shiba-daemon-util": "^1.0.1",
-    "v-connector": "^1.0.0"
+    "shiba-daemon-util": "^1.0.2",
+    "v-connector": "^1.0.0",
+    "v-constants": "^1.1.0"
   },
   "devDependencies": {
     "aport": "^2.0.0",
@@ -51,7 +52,7 @@
     "the-templates": "^2.0.1",
     "v-call": "^1.2.6",
     "v-spot": "^1.2.0",
-    "v-spot-ws": "^1.0.13"
+    "v-spot-ws": "^1.1.2"
   },
   "engines": {
     "node": ">=8",
