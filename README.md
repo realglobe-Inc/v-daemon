@@ -84,7 +84,7 @@ Step01: Create script file to run. File basename will be the subject id
 'use strict'
 
 // verb and object passed as process args
-const [, , verb, object1, object2] = process.argv
+const [, , subject, verb, object1, object2] = process.argv
 
 switch (verb) {
   case 'sayHi': {
@@ -164,7 +164,7 @@ const vSpot = require('v-spot')
 API Guide
 -----
 
-+ [v-daemon@1.2.5](./doc/api/api.md)
++ [v-daemon@2.0.0](./doc/api/api.md)
 
 
 <!-- Section from "doc/guides/10.API Guide.md.hbs" End -->
