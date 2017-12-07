@@ -132,6 +132,29 @@ const vSpot = require('v-spot')
 ```
 
 
+### More Script Examples
+
+**Bash Script Example**
+```bash
+#!/bin/bash
+#
+
+subject=$1
+verb=$2
+object1=$3
+object2=$4
+
+if [[ ${verb} == *"sayHi"* ]]
+then
+  printf "Hi, ${object1} and ${object2}"
+  exit
+fi
+
+echo "Unknown verb ${verb}"
+exit 1
+```
+
+
 ### CLI Help
 
 ```bash
@@ -164,7 +187,7 @@ const vSpot = require('v-spot')
 API Guide
 -----
 
-+ [v-daemon@2.0.1](./doc/api/api.md)
++ [v-daemon@2.0.2](./doc/api/api.md)
 
 
 <!-- Section from "doc/guides/10.API Guide.md.hbs" End -->
