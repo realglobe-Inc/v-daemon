@@ -8,7 +8,7 @@ object2=$4
 
 if [[ ${verb} == *"sayHi"* ]]
 then
-  echo "Hi, ${object1} and ${object2}"
+  printf "Hi, ${object1} and ${object2}"
   exit
 fi
 

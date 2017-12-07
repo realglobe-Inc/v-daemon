@@ -83,7 +83,7 @@ describe('v-daemon', function () {
     {
       const example03 = await client.use('jp.realglobe.v-daemon.example03')
       equal(
-        String(await example03.uname()),
+        String(await example03.uname()).trim(),
         String(execSync('uname')).trim()
       )
 
