@@ -6,7 +6,7 @@
 'use strict'
 
 // verb and object passed as process args
-const [, , verb, object1, object2] = process.argv
+const [, , subject, verb, object1, object2] = process.argv
 
 switch (verb) {
   case 'sayHi': {

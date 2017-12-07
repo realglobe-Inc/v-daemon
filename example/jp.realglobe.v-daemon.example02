@@ -1,9 +1,10 @@
 #!/bin/bash
 #
 
-verb=$1
-object1=$2
-object2=$3
+subject=$1
+verb=$2
+object1=$3
+object2=$4
 
 if [[ ${verb} == *"sayHi"* ]]
 then
