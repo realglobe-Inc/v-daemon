@@ -37,7 +37,7 @@
     "commander": "^2.12.2",
     "debug": "^3.1.0",
     "shiba-daemon-util": "^3.0.0",
-    "v-connector": "^1.0.0",
+    "v-connector": "^1.0.1",
     "v-constants": "^1.1.0"
   },
   "devDependencies": {
@@ -51,8 +51,8 @@
     "the-script-update": "^1.0.0",
     "the-templates": "^2.0.1",
     "v-call": "^1.2.7",
-    "v-spot": "^1.2.0",
-    "v-spot-ws": "^1.1.2"
+    "v-spot": "^1.2.1",
+    "v-spot-ws": "^1.1.4"
   },
   "engines": {
     "node": ">=8",
