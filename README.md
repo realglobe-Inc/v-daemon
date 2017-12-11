@@ -187,7 +187,7 @@ exit 1
 API Guide
 -----
 
-+ [v-daemon@2.0.2](./doc/api/api.md)
++ [v-daemon@2.0.3](./doc/api/api.md)
 
 
 <!-- Section from "doc/guides/10.API Guide.md.hbs" End -->
